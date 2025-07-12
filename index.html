@@ -1,86 +1,69 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Do You Love Me?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midnight Burn — काग़ज़ khaab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      font-family: 'Crimson Pro', serif;
       margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, #2e003e, #ff9a9e);
-      color: #fff;
-      font-family: 'Great Vibes', cursive;
+      padding: 40px 20px;
+      line-height: 1.8;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       flex-direction: column;
-      text-align: center;
-      overflow: hidden;
-    }h1 {
-  font-size: 3rem;
+      align-items: center;
+    }.poem-container {
+  max-width: 700px;
+  text-align: center;
+  padding: 20px;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #f5f5f5;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
   margin-bottom: 30px;
-  animation: glow 2s ease-in-out infinite alternate;
 }
 
-.buttons {
-  display: flex;
-  gap: 30px;
+.line {
+  margin: 12px 0;
 }
 
-.buttons button {
-  padding: 15px 30px;
-  background: #fff;
-  color: #ff4d6d;
-  border: none;
-  border-radius: 12px;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 0.7rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.buttons button:hover {
-  background: #ffe3e3;
-  transform: scale(1.1);
-}
-
-.rose {
-  font-size: 5rem;
-  opacity: 0;
-  animation: pop 1s forwards;
-  margin-top: 40px;
-}
-
-@keyframes glow {
-  from { text-shadow: 0 0 10px #ff9a9e; }
-  to { text-shadow: 0 0 30px #fff; }
-}
-
-@keyframes pop {
-  0% { transform: scale(0); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
+.signature {
+  margin-top: 50px;
+  font-style: italic;
+  color: #aaaaaa;
 }
 
   </style>
 </head>
 <body>
-  <h1 id="question">Do you love me?</h1>
-  <div class="buttons">
-    <button onclick="showRose()">Yes 💖</button>
-    <button onclick="askAgain()">No 💔</button>
-  </div>
-  <div id="rose" class="rose">🌹</div>  <script>
-    function showRose() {
-      document.getElementById("question").innerText = "I knew it 💘";
-      document.querySelector(".buttons").style.display = "none";
-      document.getElementById("rose").style.opacity = "1";
-    }
+  <div class="poem-container">
+    <h1>Midnight Burn</h1><div class="line">It’s past midnight,</div>
+<div class="line">The fan hums like a tired thought.</div>
+<div class="line">I stare at the ceiling,</div>
+<div class="line">waiting for sleep to remember me.</div>
 
-    function askAgain() {
-      const q = document.getElementById("question");
-      q.innerText = "Do you love me?";
-      document.getElementById("rose").style.opacity = "0";
-    }
-  </script></body>
-  </html>
+<div class="line">The room isn’t dark,</div>
+<div class="line">but it feels blind.</div>
+<div class="line">Every corner holds something I’ve forgotten to feel.</div>
+<div class="line">And somewhere in between,</div>
+<div class="line">a name burns in silence.</div>
+
+<div class="line">Not pain,</div>
+<div class="line">just a dull echo of what used to matter.</div>
+<div class="line">No messages to reply to,</div>
+<div class="line">no voice that breaks the stillness.</div>
+
+<div class="line">Only me,</div>
+<div class="line">and the burn I don’t talk about.</div>
+
+<div class="signature">— A ~ काग़ज़ khaab</div>
+
+  </div>
+</body>
+</html>
