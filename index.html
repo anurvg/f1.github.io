@@ -1,69 +1,41 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Midnight Burn — काग़ज़ khaab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #0e0e0e;
-      color: #f5f5f5;
-      font-family: 'Crimson Pro', serif;
-      margin: 0;
-      padding: 40px 20px;
-      line-height: 1.8;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }.poem-container {
-  max-width: 700px;
-  text-align: center;
-  padding: 20px;
-  border-left: 2px solid #f5f5f5;
-  border-right: 2px solid #f5f5f5;
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.line {
-  margin: 12px 0;
-}
-
-.signature {
-  margin-top: 50px;
-  font-style: italic;
-  color: #aaaaaa;
-}
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anurag's F1 Garage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="poem-container">
-    <h1>Midnight Burn</h1><div class="line">It’s past midnight,</div>
-<div class="line">The fan hums like a tired thought.</div>
-<div class="line">I stare at the ceiling,</div>
-<div class="line">waiting for sleep to remember me.</div>
+  <video autoplay loop muted playsinline class="bg-video">
+    <source src="assets/f1-intro.mp4" type="video/mp4" />
+  </video>
 
-<div class="line">The room isn’t dark,</div>
-<div class="line">but it feels blind.</div>
-<div class="line">Every corner holds something I’ve forgotten to feel.</div>
-<div class="line">And somewhere in between,</div>
-<div class="line">a name burns in silence.</div>
+  <div class="overlay"></div>
 
-<div class="line">Not pain,</div>
-<div class="line">just a dull echo of what used to matter.</div>
-<div class="line">No messages to reply to,</div>
-<div class="line">no voice that breaks the stillness.</div>
+  <header>
+    <h1>Anurag's F1 Garage 🏎️</h1>
+    <p>Speed is my drug. F1 is my religion.</p>
+  </header>
 
-<div class="line">Only me,</div>
-<div class="line">and the burn I don’t talk about.</div>
+  <section class="posters">
+    <h2>🔥 Actual F1 Posters</h2>
+    <div class="poster-grid">
+      <img src="assets/f1-poster1.jpg" alt="F1 Poster 1">
+      <img src="assets/f1-poster2.jpg" alt="F1 Poster 2">
+      <img src="assets/f1-poster3.jpg" alt="F1 Poster 3">
+    </div>
+  </section>
 
-<div class="signature">— A ~ काग़ज़ khaab</div>
+  <section class="film">
+    <h2>🎬 Brad Pitt’s F1 Movie</h2>
+    <img src="assets/bradpitt-f1.jpg" alt="Brad Pitt F1 Poster">
+    <p><em>Brad Pitt gears up as an ex-F1 legend training a rookie in the high-octane world of Formula 1. Coming soon on the big screen.</em></p>
+  </section>
 
-  </div>
+  <footer>
+    <p>Made with ⚡ by Anurag aka The Garage God</p>
+  </footer>
 </body>
 </html>
